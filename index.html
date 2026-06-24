@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Веб-Приложения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. Список задач -->
+        <div class="card">
+            <h2>Список задач</h2>
+            <div class="todo-container">
+                <input type="text" class="todo-input" placeholder="Введите новую задачу...">
+                <button class="todo-btn">Добавить</button>
+            </div>
+            <!-- Сюда будут добавляться задачи -->
+            <ul class="todo-list"></ul>
+        </div>
+
+        <!-- 2. Калькулятор -->
+        <div class="card calc-card">
+            <h2>Калькулятор</h2>
+            <input type="text" class="calc-screen" value="0" readonly>
+            
+            <div class="calc-grid">
+                <button class="btn btn-clear">C</button>
+                <button class="btn btn-back">✉</button>
+                <button class="btn btn-op">/</button>
+                <button class="btn btn-op">*</button>
+
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn btn-op">-</button>
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn btn-op">+</button>
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn btn-equal">=</button>
+
+                <button class="btn btn-zero">0</button>
+            </div>
+        </div>
+
+        <!-- 3. Регистрация -->
+        <div class="card">
+            <h2>Регистрация</h2>
+            <form class="reg-form">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" class="reg-email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль (от 6 символов):</label>
+                    <input type="password" class="reg-password" placeholder="••••••" required>
+                </div>
+                <button type="submit" class="reg-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
